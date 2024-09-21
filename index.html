@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Juego de Verbos en Inglés 2ª ESO - Salesianos</title><!-- Metadatos del autor -->
+    <title>Juego de Verbos en Inglés 2ª ESO - Salesianos</title>
     <meta name="author" content="Víctor García Peña">
     <meta name="description" content="web para repasar los verbos irregulares ingles 2º de la ESO">
     <style>
@@ -44,7 +44,7 @@
             cursor: pointer;
             font-size: 16px;
             transition: background-color 0.3s, transform 0.2s;
-            margin: 5px; /* Añadido margen entre botones */
+            margin: 5px;
         }
         button:hover {
             background-color: #45a049;
@@ -82,8 +82,8 @@
                 padding: 10px;
             }
             button {
-                width: 100%; /* Botones ocupan todo el ancho en pantallas pequeñas */
-                margin: 10px 0; /* Márgenes verticales */
+                width: 100%;
+                margin: 10px 0;
             }
         }
     </style>
@@ -108,7 +108,7 @@
         <input type="text" id="past" placeholder="Pasado Simple" aria-label="Pasado Simple">
         <input type="text" id="participle" placeholder="Participio Pasado" aria-label="Participio Pasado">
 
-        <button onclick="submitAnswer()">Enviar Respuesta</button>
+        <button id="submit-answer">Enviar Respuesta</button>
         <div id="feedback"></div>
     </div>
 
@@ -127,93 +127,6 @@
 </div>
 
 <script>
-    const verbs = [
-        { infinitivo: 'be', pasadoSimple: 'was', participioPasado: 'been', español: 'ser / estar' },
-        { infinitivo: 'bear', pasadoSimple: 'bore', participioPasado: 'born', español: 'llevar / aguantar' },
-        { infinitivo: 'beat', pasadoSimple: 'beat', participioPasado: 'beaten', español: 'golpear' },
-        { infinitivo: 'become', pasadoSimple: 'became', participioPasado: 'become', español: 'llegar a ser' },
-        { infinitivo: 'bite', pasadoSimple: 'bit', participioPasado: 'bitten', español: 'morder' },
-        { infinitivo: 'blow', pasadoSimple: 'blew', participioPasado: 'blown', español: 'soplar' },
-        { infinitivo: 'begin', pasadoSimple: 'began', participioPasado: 'begun', español: 'empezar' },
-        { infinitivo: 'break', pasadoSimple: 'broke', participioPasado: 'broken', español: 'romper' },
-        { infinitivo: 'bring', pasadoSimple: 'brought', participioPasado: 'brought', español: 'traer' },
-        { infinitivo: 'build', pasadoSimple: 'built', participioPasado: 'built', español: 'construir' },
-        { infinitivo: 'burn', pasadoSimple: 'burnt', participioPasado: 'burnt', español: 'quemar' },
-        { infinitivo: 'burst', pasadoSimple: 'burst', participioPasado: 'burst', español: 'reventar' },
-        { infinitivo: 'buy', pasadoSimple: 'bought', participioPasado: 'bought', español: 'comprar' },
-        { infinitivo: 'can', pasadoSimple: 'could', participioPasado: 'been able to', español: 'poder' },
-        { infinitivo: 'catch', pasadoSimple: 'caught', participioPasado: 'caught', español: 'coger / agarrar' },
-        { infinitivo: 'choose', pasadoSimple: 'chose', participioPasado: 'chosen', español: 'elegir' },
-        { infinitivo: 'come', pasadoSimple: 'came', participioPasado: 'come', español: 'venir' },
-        { infinitivo: 'cost', pasadoSimple: 'cost', participioPasado: 'cost', español: 'costar' },
-        { infinitivo: 'cut', pasadoSimple: 'cut', participioPasado: 'cut', español: 'cortar' },
-        { infinitivo: 'deal', pasadoSimple: 'dealt', participioPasado: 'dealt', español: 'tratar' },
-        { infinitivo: 'dig', pasadoSimple: 'dug', participioPasado: 'dug', español: 'cavar' },
-        { infinitivo: 'do', pasadoSimple: 'did', participioPasado: 'done', español: 'hacer' },
-        { infinitivo: 'draw', pasadoSimple: 'drew', participioPasado: 'drawn', español: 'dibujar' },
-        { infinitivo: 'dream', pasadoSimple: 'dreamt', participioPasado: 'dreamt', español: 'soñar' },
-        { infinitivo: 'drink', pasadoSimple: 'drank', participioPasado: 'drunk', español: 'beber' },
-        { infinitivo: 'drive', pasadoSimple: 'drove', participioPasado: 'driven', español: 'conducir' },
-        { infinitivo: 'eat', pasadoSimple: 'ate', participioPasado: 'eaten', español: 'comer' },
-        { infinitivo: 'fall', pasadoSimple: 'fell', participioPasado: 'fallen', español: 'caer' },
-        { infinitivo: 'feed', pasadoSimple: 'fed', participioPasado: 'fed', español: 'alimentar' },
-        { infinitivo: 'feel', pasadoSimple: 'felt', participioPasado: 'felt', español: 'sentir' },
-        { infinitivo: 'fight', pasadoSimple: 'fought', participioPasado: 'fought', español: 'luchar' },
-        { infinitivo: 'find', pasadoSimple: 'found', participioPasado: 'found', español: 'encontrar' },
-        { infinitivo: 'fly', pasadoSimple: 'flew', participioPasado: 'flown', español: 'volar' },
-        { infinitivo: 'forbid', pasadoSimple: 'forbade', participioPasado: 'forbidden', español: 'prohibir' },
-        { infinitivo: 'forget', pasadoSimple: 'forgot', participioPasado: 'forgotten', español: 'olvidar' },
-        { infinitivo: 'forgive', pasadoSimple: 'forgave', participioPasado: 'forgiven', español: 'perdonar' },
-        { infinitivo: 'freeze', pasadoSimple: 'froze', participioPasado: 'frozen', español: 'congelarse' },
-        { infinitivo: 'get', pasadoSimple: 'got', participioPasado: 'got', español: 'conseguir / recibir' },
-        { infinitivo: 'give', pasadoSimple: 'gave', participioPasado: 'given', español: 'dar' },
-        { infinitivo: 'go', pasadoSimple: 'went', participioPasado: 'gone', español: 'ir' },
-        { infinitivo: 'grow', pasadoSimple: 'grew', participioPasado: 'grown', español: 'crecer / cultivar' },
-        { infinitivo: 'hang', pasadoSimple: 'hung', participioPasado: 'hung', español: 'colgar' },
-        { infinitivo: 'have', pasadoSimple: 'had', participioPasado: 'had', español: 'tener' },
-        { infinitivo: 'hear', pasadoSimple: 'heard', participioPasado: 'heard', español: 'oír' },
-        { infinitivo: 'hide', pasadoSimple: 'hid', participioPasado: 'hidden', español: 'esconderse' },
-        { infinitivo: 'hit', pasadoSimple: 'hit', participioPasado: 'hit', español: 'golpear / pegar' },
-        { infinitivo: 'hold', pasadoSimple: 'held', participioPasado: 'held', español: 'sujetar' },
-        { infinitivo: 'hurt', pasadoSimple: 'hurt', participioPasado: 'hurt', español: 'herir / hacer daño' },
-        { infinitivo: 'keep', pasadoSimple: 'kept', participioPasado: 'kept', español: 'guardar / mantener' },
-        { infinitivo: 'lead', pasadoSimple: 'led', participioPasado: 'led', español: 'dirigir' },
-        { infinitivo: 'know', pasadoSimple: 'knew', participioPasado: 'known', español: 'saber / conocer' },
-        { infinitivo: 'learn', pasadoSimple: 'learnt', participioPasado: 'learnt', español: 'aprender' },
-        { infinitivo: 'leave', pasadoSimple: 'left', participioPasado: 'left', español: 'dejar' },
-        { infinitivo: 'lend', pasadoSimple: 'lent', participioPasado: 'lent', español: 'prestar' },
-        { infinitivo: 'let', pasadoSimple: 'let', participioPasado: 'let', español: 'dejar' },
-        { infinitivo: 'lie', pasadoSimple: 'lay', participioPasado: 'lain', español: 'mentir' },
-        { infinitivo: 'lose', pasadoSimple: 'lost', participioPasado: 'lost', español: 'perder' },
-        { infinitivo: 'make', pasadoSimple: 'made', participioPasado: 'made', español: 'hacer' },
-        { infinitivo: 'meet', pasadoSimple: 'met', participioPasado: 'met', español: 'encontrarse' },
-        { infinitivo: 'pay', pasadoSimple: 'paid', participioPasado: 'paid', español: 'pagar' },
-        { infinitivo: 'put', pasadoSimple: 'put', participioPasado: 'put', español: 'poner' },
-        { infinitivo: 'read', pasadoSimple: 'read', participioPasado: 'read', español: 'leer' },
-        { infinitivo: 'ride', pasadoSimple: 'rode', participioPasado: 'ridden', español: 'montar' },
-        { infinitivo: 'run', pasadoSimple: 'ran', participioPasado: 'run', español: 'correr' },
-        { infinitivo: 'say', pasadoSimple: 'said', participioPasado: 'said', español: 'decir' },
-        { infinitivo: 'see', pasadoSimple: 'saw', participioPasado: 'seen', español: 'ver' },
-        { infinitivo: 'sell', pasadoSimple: 'sold', participioPasado: 'sold', español: 'vender' },
-        { infinitivo: 'send', pasadoSimple: 'sent', participioPasado: 'sent', español: 'enviar' },
-        { infinitivo: 'sing', pasadoSimple: 'sang', participioPasado: 'sung', español: 'cantar' },
-        { infinitivo: 'sit', pasadoSimple: 'sat', participioPasado: 'sat', español: 'sentarse' },
-        { infinitivo: 'sleep', pasadoSimple: 'slept', participioPasado: 'slept', español: 'dormir' },
-        { infinitivo: 'speak', pasadoSimple: 'spoke', participioPasado: 'spoken', español: 'hablar' },
-        { infinitivo: 'spend', pasadoSimple: 'spent', participioPasado: 'spent', español: 'gastar' },
-        { infinitivo: 'stand', pasadoSimple: 'stood', participioPasado: 'stood', español: 'estar de pie' },
-        { infinitivo: 'take', pasadoSimple: 'took', participioPasado: 'taken', español: 'tomar' },
-        { infinitivo: 'teach', pasadoSimple: 'taught', participioPasado: 'taught', español: 'enseñar' },
-        { infinitivo: 'tell', pasadoSimple: 'told', participioPasado: 'told', español: 'contar' },
-        { infinitivo: 'think', pasadoSimple: 'thought', participioPasado: 'thought', español: 'pensar' },
-        { infinitivo: 'throw', pasadoSimple: 'threw', participioPasado: 'thrown', español: 'lanzar' },
-        { infinitivo: 'understand', pasadoSimple: 'understood', participioPasado: 'understood', español: 'entender' },
-        { infinitivo: 'wake', pasadoSimple: 'woke', participioPasado: 'woken', español: 'despertar' },
-        { infinitivo: 'wear', pasadoSimple: 'wore', participioPasado: 'worn', español: 'llevar puesto' },
-        { infinitivo: 'win', pasadoSimple: 'won', participioPasado: 'won', español: 'ganar' },
-        { infinitivo: 'write', pasadoSimple: 'wrote', participioPasado: 'written', español: 'escribir' }
-    ];
-
     let selectedVerbs = [];
     let currentVerb = {};
     let score = 0;
@@ -221,26 +134,41 @@
     const totalQuestions = 15;
     let askedVerbs = [];
     let incorrectVerbs = [];
+    let verbs = [];
+
+    async function loadVerbs() {
+        const response = await fetch('verbos.json'); 
+        const data = await response.json();
+        verbs = data.verbos.map(verb => ({
+            infinitivo: verb.Infinitive.toLowerCase(),
+            pasadoSimple: verb["Simple Past"].toLowerCase(),
+            participioPasado: verb["Past  Participle"].toLowerCase(),
+            español: verb.Castellano.toLowerCase()
+        }));
+    }
 
     document.getElementById('first50').addEventListener('click', () => setVerbList('first50'));
     document.getElementById('last50').addEventListener('click', () => setVerbList('last50'));
     document.getElementById('all').addEventListener('click', () => setVerbList('all'));
 
+    window.onload = async function() {
+        await loadVerbs();
+    };
+
     function setVerbList(option) {
         if (option === 'first50') {
-            selectedVerbs = verbs.slice(0, 52); // Primeros 50
+            selectedVerbs = verbs.slice(0, 50);
         } else if (option === 'last50') {
-            selectedVerbs = verbs.slice(-52); // Últimos 50
+            selectedVerbs = verbs.slice(-50);
         } else {
-            selectedVerbs = verbs; // Todos los verbos
+            selectedVerbs = verbs;
         }
-        shuffleArray(selectedVerbs); // Mezcla aleatoriamente los verbos seleccionados
-        selectedVerbs = selectedVerbs.slice(0, totalQuestions); // Selecciona 15 verbos aleatorios
+        shuffleArray(selectedVerbs);
+        selectedVerbs = selectedVerbs.slice(0, totalQuestions);
         document.getElementById('start-options').classList.add('hidden');
         startGame();
     }
 
-    // Función para mezclar un array aleatoriamente usando Fisher-Yates
     function shuffleArray(array) {
         for (let i = array.length - 1; i > 0; i--) {
             const j = Math.floor(Math.random() * (i + 1));
@@ -275,9 +203,9 @@
         const userPast = document.getElementById('past').value.trim().toLowerCase();
         const userParticiple = document.getElementById('participle').value.trim().toLowerCase();
 
-        const correctInfinitive = currentVerb.infinitivo.toLowerCase();
-        const correctPast = currentVerb.pasadoSimple.toLowerCase();
-        const correctParticiple = currentVerb.participioPasado.toLowerCase();
+        const correctInfinitive = currentVerb.infinitivo;
+        const correctPast = currentVerb.pasadoSimple;
+        const correctParticiple = currentVerb.participioPasado;
 
         let isCorrect = true;
         let feedback = '';
@@ -311,6 +239,8 @@
             endGame();
         }
     }
+
+    document.getElementById('submit-answer').addEventListener('click', submitAnswer);
 
     function clearInputs() {
         document.getElementById('infinitive').value = '';
