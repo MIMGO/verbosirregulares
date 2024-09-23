@@ -26,9 +26,9 @@ document.getElementById('all').addEventListener('click', () => setVerbList('all'
 
 function setVerbList(option) {
     if (option === 'first50') {
-        selectedVerbs = verbs.slice(0, 50);
+        selectedVerbs = verbs.slice(0, 52);
     } else if (option === 'last50') {
-        selectedVerbs = verbs.slice(-50);
+        selectedVerbs = verbs.slice(-52);
     } else {
         selectedVerbs = verbs;
     }
@@ -113,9 +113,9 @@ function submitAnswer() {
     questionCount++;
 
     if (questionCount < totalQuestions) {
-        setTimeout(showNewQuestion, 2500);  // Espera 1.5 segundos antes de mostrar la siguiente pregunta
+        setTimeout(showNewQuestion, 2500);  // Espera 2.5 segundos antes de mostrar la siguiente pregunta
     } else {
-        setTimeout(endGame, 2500);  // Espera 1.5 segundos antes de terminar el juego
+        setTimeout(endGame, 2500);  // Espera 2.5 segundos antes de terminar el juego
     }
 }
 
