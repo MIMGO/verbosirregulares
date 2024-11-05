@@ -1,0 +1,694 @@
+{
+    "verbos":[
+     {
+      "Infinitive": "be",
+      "Simple Past": "was",
+      "Past Participle": "been",
+      "Castellano": "ser"
+     },
+     {
+      "Infinitive": "BEAR",
+      "Simple Past": "BORE",
+      "Past Participle": "BORN",
+      "Castellano": "LLEVAR \/ AGUANTAR"
+     },
+     {
+      "Infinitive": "beat",
+      "Simple Past": "beat",
+      "Past Participle": "beaten",
+      "Castellano": "golpear"
+     },
+     {
+      "Infinitive": "become",
+      "Simple Past": "became",
+      "Past Participle": "become",
+      "Castellano": "convertirse \/ llegar a ser"
+     },
+     {
+      "Infinitive": "begin",
+      "Simple Past": "began",
+      "Past Participle": "begun",
+      "Castellano": "comenzar"
+     },
+     {
+      "Infinitive": "bite",
+      "Simple Past": "bit",
+      "Past Participle": "bitten",
+      "Castellano": "morder"
+     },
+     {
+      "Infinitive": "blow",
+      "Simple Past": "blew",
+      "Past Participle": "blown",
+      "Castellano": "soplar"
+     },
+     {
+      "Infinitive": "break",
+      "Simple Past": "broke",
+      "Past Participle": "broken",
+      "Castellano": "romper"
+     },
+     {
+      "Infinitive": "bring",
+      "Simple Past": "brought",
+      "Past Participle": "brought",
+      "Castellano": "traer"
+     },
+     {
+      "Infinitive": "build",
+      "Simple Past": "built",
+      "Past Participle": "built",
+      "Castellano": "construir"
+     },
+     {
+      "Infinitive": "burn",
+      "Simple Past": "burnt",
+      "Past Participle": "burnt",
+      "Castellano": "quemar"
+     },
+     {
+      "Infinitive": "burst",
+      "Simple Past": "burst",
+      "Past Participle": "burst",
+      "Castellano": "reventar"
+     },
+     {
+      "Infinitive": "buy",
+      "Simple Past": "bought",
+      "Past Participle": "bought",
+      "Castellano": "comprar"
+     },
+     {
+      "Infinitive": "can",
+      "Simple Past": "could",
+      "Past Participle": "been able to",
+      "Castellano": "poder"
+     },
+     {
+      "Infinitive": "catch",
+      "Simple Past": "caught",
+      "Past Participle": "caught",
+      "Castellano": "atrapar"
+     },
+     {
+      "Infinitive": "choose",
+      "Simple Past": "chose",
+      "Past Participle": "chosen",
+      "Castellano": "elegir"
+     },
+     {
+      "Infinitive": "come",
+      "Simple Past": "came",
+      "Past Participle": "come",
+      "Castellano": "venir"
+     },
+     {
+      "Infinitive": "cost",
+      "Simple Past": "cost",
+      "Past Participle": "cost",
+      "Castellano": "costar"
+     },
+     {
+      "Infinitive": "cut",
+      "Simple Past": "cut",
+      "Past Participle": "cut",
+      "Castellano": "cortar"
+     },
+     {
+      "Infinitive": "deal",
+      "Simple Past": "dealt",
+      "Past Participle": "dealt",
+      "Castellano": "tratar"
+     },
+     {
+      "Infinitive": "dig",
+      "Simple Past": "dug",
+      "Past Participle": "dug",
+      "Castellano": "cavar"
+     },
+     {
+      "Infinitive": "do",
+      "Simple Past": "did",
+      "Past Participle": "done",
+      "Castellano": "hacer"
+     },
+     {
+      "Infinitive": "draw",
+      "Simple Past": "drew",
+      "Past Participle": "drawn",
+      "Castellano": "dibujar"
+     },
+     {
+      "Infinitive": "dream",
+      "Simple Past": "dreamt",
+      "Past Participle": "dreamt",
+      "Castellano": "soñar"
+     },
+     {
+      "Infinitive": "drink",
+      "Simple Past": "drank",
+      "Past Participle": "drunk",
+      "Castellano": "beber"
+     },
+     {
+      "Infinitive": "drive",
+      "Simple Past": "drove",
+      "Past Participle": "driven",
+      "Castellano": "conducir"
+     },
+     {
+      "Infinitive": "eat",
+      "Simple Past": "ate",
+      "Past Participle": "eaten",
+      "Castellano": "comer"
+     },
+     {
+      "Infinitive": "fall",
+      "Simple Past": "fell",
+      "Past Participle": "fallen",
+      "Castellano": "caer"
+     },
+     {
+      "Infinitive": "feed",
+      "Simple Past": "fed",
+      "Past Participle": "fed",
+      "Castellano": "alimentar"
+     },
+     {
+      "Infinitive": "feel",
+      "Simple Past": "felt",
+      "Past Participle": "felt",
+      "Castellano": "sentir"
+     },
+     {
+      "Infinitive": "fight",
+      "Simple Past": "fought",
+      "Past Participle": "fought",
+      "Castellano": "pelear \/ luchar"
+     },
+     {
+      "Infinitive": "find",
+      "Simple Past": "found",
+      "Past Participle": "found",
+      "Castellano": "encontrar"
+     },
+     {
+      "Infinitive": "fly",
+      "Simple Past": "flew",
+      "Past Participle": "flown",
+      "Castellano": "volar"
+     },
+     {
+      "Infinitive": "forbide",
+      "Simple Past": "forbade",
+      "Past Participle": "forbidden",
+      "Castellano": "prohibir"
+     },
+     {
+      "Infinitive": "forget",
+      "Simple Past": "forgot",
+      "Past Participle": "forgotten",
+      "Castellano": "olvidar"
+     },
+     {
+      "Infinitive": "forgive",
+      "Simple Past": "forgave",
+      "Past Participle": "forgiven",
+      "Castellano": "perdonar"
+     },
+     {
+      "Infinitive": "freeze",
+      "Simple Past": "froze",
+      "Past Participle": "frozen",
+      "Castellano": "congelar"
+     },
+     {
+      "Infinitive": "get",
+      "Simple Past": "got",
+      "Past Participle": "got",
+      "Castellano": "tener, obtener, conseguir"
+     },
+     {
+      "Infinitive": "give",
+      "Simple Past": "gave",
+      "Past Participle": "given",
+      "Castellano": "dar"
+     },
+     {
+      "Infinitive": "grow",
+      "Simple Past": "grew",
+      "Past Participle": "grown",
+      "Castellano": "crecer"
+     },
+     {
+      "Infinitive": "hang",
+      "Simple Past": "hung",
+      "Past Participle": "hung",
+      "Castellano": "colgar"
+     },
+     {
+      "Infinitive": "have",
+      "Simple Past": "had",
+      "Past Participle": "had",
+      "Castellano": "tener"
+     },
+     {
+      "Infinitive": "hear",
+      "Simple Past": "heard",
+      "Past Participle": "heard",
+      "Castellano": "oír"
+     },
+     {
+      "Infinitive": "hide",
+      "Simple Past": "hid",
+      "Past Participle": "hidden",
+      "Castellano": "esconderse"
+     },
+     {
+      "Infinitive": "hit",
+      "Simple Past": "hit",
+      "Past Participle": "hit",
+      "Castellano": "golpear"
+     },
+     {
+      "Infinitive": "hold",
+      "Simple Past": "held",
+      "Past Participle": "held",
+      "Castellano": "sujetar, mantener"
+     },
+     {
+      "Infinitive": "hurt",
+      "Simple Past": "hurt",
+      "Past Participle": "hurt",
+      "Castellano": "herir, doler"
+     },
+     {
+      "Infinitive": "keep",
+      "Simple Past": "kept",
+      "Past Participle": "kept",
+      "Castellano": "guardar"
+     },
+     {
+      "Infinitive": "know",
+      "Simple Past": "knew",
+      "Past Participle": "known",
+      "Castellano": "saber"
+     },
+     {
+      "Infinitive": "lead",
+      "Simple Past": "led",
+      "Past Participle": "led",
+      "Castellano": "dirigir"
+     },
+     {
+      "Infinitive": "learn",
+      "Simple Past": "learnt",
+      "Past Participle": "learnt",
+      "Castellano": "aprender"
+     },
+     {
+      "Infinitive": "leave",
+      "Simple Past": "left",
+      "Past Participle": "left",
+      "Castellano": "dejar"
+     },
+     {
+      "Infinitive": "lend",
+      "Simple Past": "lent",
+      "Past Participle": "lent",
+      "Castellano": "prestar"
+     },
+     {
+      "Infinitive": "let",
+      "Simple Past": "let",
+      "Past Participle": "let",
+      "Castellano": "dejar"
+     },
+     {
+      "Infinitive": "lie",
+      "Simple Past": "lay",
+      "Past Participle": "lain",
+      "Castellano": "yacer"
+     },
+     {
+      "Infinitive": "lose",
+      "Simple Past": "lost",
+      "Past Participle": "lost",
+      "Castellano": "perder"
+     },
+     {
+      "Infinitive": "make",
+      "Simple Past": "made",
+      "Past Participle": "made",
+      "Castellano": "hacer"
+     },
+     {
+      "Infinitive": "mean",
+      "Simple Past": "meant",
+      "Past Participle": "meant",
+      "Castellano": "significar"
+     },
+     {
+      "Infinitive": "meet",
+      "Simple Past": "met",
+      "Past Participle": "met",
+      "Castellano": "conocer, encontrar"
+     },
+     {
+      "Infinitive": "pay",
+      "Simple Past": "paid",
+      "Past Participle": "paid",
+      "Castellano": "pagar"
+     },
+     {
+      "Infinitive": "put",
+      "Simple Past": "put",
+      "Past Participle": "put",
+      "Castellano": "poner"
+     },
+     {
+      "Infinitive": "quit",
+      "Simple Past": "quit\/quitted",
+      "Past Participle": "quit\/quitted",
+      "Castellano": "abandonar"
+     },
+     {
+      "Infinitive": "read",
+      "Simple Past": "read",
+      "Past Participle": "read",
+      "Castellano": "leer"
+     },
+     {
+      "Infinitive": "ride",
+      "Simple Past": "rode",
+      "Past Participle": "ridden",
+      "Castellano": "montar, ir"
+     },
+     {
+      "Infinitive": "ring",
+      "Simple Past": "rang",
+      "Past Participle": "rung",
+      "Castellano": "llamar por teléfono"
+     },
+     {
+      "Infinitive": "rise",
+      "Simple Past": "rose",
+      "Past Participle": "risen",
+      "Castellano": "elevar"
+     },
+     {
+      "Infinitive": "run",
+      "Simple Past": "ran",
+      "Past Participle": "run",
+      "Castellano": "correr"
+     },
+     {
+      "Infinitive": "say",
+      "Simple Past": "said",
+      "Past Participle": "said",
+      "Castellano": "decir"
+     },
+     {
+      "Infinitive": "see",
+      "Simple Past": "saw",
+      "Past Participle": "seen",
+      "Castellano": "ver"
+     },
+     {
+      "Infinitive": "sell",
+      "Simple Past": "sold",
+      "Past Participle": "sold",
+      "Castellano": "vender"
+     },
+     {
+      "Infinitive": "send",
+      "Simple Past": "sent",
+      "Past Participle": "sent",
+      "Castellano": "enviar"
+     },
+     {
+      "Infinitive": "set",
+      "Simple Past": "set",
+      "Past Participle": "set",
+      "Castellano": "fijar"
+     },
+     {
+      "Infinitive": "sew",
+      "Simple Past": "sewed",
+      "Past Participle": "sewn\/sewed",
+      "Castellano": "coser"
+     },
+     {
+      "Infinitive": "shake",
+      "Simple Past": "shook",
+      "Past Participle": "shaken",
+      "Castellano": "sacudir"
+     },
+     {
+      "Infinitive": "shine",
+      "Simple Past": "shone",
+      "Past Participle": "shone",
+      "Castellano": "brillar"
+     },
+     {
+      "Infinitive": "shoot",
+      "Simple Past": "shot",
+      "Past Participle": "shot",
+      "Castellano": "disparar"
+     },
+     {
+      "Infinitive": "show",
+      "Simple Past": "showed",
+      "Past Participle": "shown\/showed",
+      "Castellano": "mostrar"
+     },
+     {
+      "Infinitive": "shrink",
+      "Simple Past": "shrank\/shrunk",
+      "Past Participle": "shrunk",
+      "Castellano": "encoger"
+     },
+     {
+      "Infinitive": "shut",
+      "Simple Past": "shut",
+      "Past Participle": "shut",
+      "Castellano": "cerrar"
+     },
+     {
+      "Infinitive": "sing",
+      "Simple Past": "sang",
+      "Past Participle": "sung",
+      "Castellano": "cantar"
+     },
+     {
+      "Infinitive": "sink",
+      "Simple Past": "sank",
+      "Past Participle": "sunk",
+      "Castellano": "hundir"
+     },
+     {
+      "Infinitive": "sit",
+      "Simple Past": "sat",
+      "Past Participle": "sat",
+      "Castellano": "sentarse"
+     },
+     {
+      "Infinitive": "sleep",
+      "Simple Past": "slept",
+      "Past Participle": "slept",
+      "Castellano": "dormir"
+     },
+     {
+      "Infinitive": "slide",
+      "Simple Past": "slid",
+      "Past Participle": "slid",
+      "Castellano": "deslizar"
+     },
+     {
+      "Infinitive": "sow",
+      "Simple Past": "sowed",
+      "Past Participle": "sown\/sowed",
+      "Castellano": "sembrar"
+     },
+     {
+      "Infinitive": "speak",
+      "Simple Past": "spoke",
+      "Past Participle": "spoken",
+      "Castellano": "hablar"
+     },
+     {
+      "Infinitive": "spell",
+      "Simple Past": "spelt\/spelled",
+      "Past Participle": "spelt\/spelled",
+      "Castellano": "deletrear"
+     },
+     {
+      "Infinitive": "spend",
+      "Simple Past": "spent",
+      "Past Participle": "spent",
+      "Castellano": "gastar"
+     },
+     {
+      "Infinitive": "spill",
+      "Simple Past": "spilt\/spilled",
+      "Past Participle": "spilt\/spilled",
+      "Castellano": "derramar"
+     },
+     {
+      "Infinitive": "split",
+      "Simple Past": "split",
+      "Past Participle": "split",
+      "Castellano": "partir"
+     },
+     {
+      "Infinitive": "spoil",
+      "Simple Past": "spoilt\/spoiled",
+      "Past Participle": "spoilt\/spoiled",
+      "Castellano": "estropear"
+     },
+     {
+      "Infinitive": "spread",
+      "Simple Past": "spread",
+      "Past Participle": "spread",
+      "Castellano": "extenderse"
+     },
+     {
+      "Infinitive": "stand",
+      "Simple Past": "stood",
+      "Past Participle": "stood",
+      "Castellano": "estar de pie"
+     },
+     {
+      "Infinitive": "steal",
+      "Simple Past": "stole",
+      "Past Participle": "stolen",
+      "Castellano": "robar"
+     },
+     {
+      "Infinitive": "sting",
+      "Simple Past": "stung",
+      "Past Participle": "stung",
+      "Castellano": "picar"
+     },
+     {
+      "Infinitive": "stink",
+      "Simple Past": "stank\/stunk",
+      "Past Participle": "stunk",
+      "Castellano": "apestar"
+     },
+     {
+      "Infinitive": "strike",
+      "Simple Past": "struck",
+      "Past Participle": "struck",
+      "Castellano": "golpear"
+     },
+     {
+      "Infinitive": "swear",
+      "Simple Past": "swore",
+      "Past Participle": "sworn",
+      "Castellano": "jurar"
+     },
+     {
+      "Infinitive": "sweep",
+      "Simple Past": "swept",
+      "Past Participle": "swept",
+      "Castellano": "barrer"
+     },
+     {
+      "Infinitive": "swim",
+      "Simple Past": "swam",
+      "Past Participle": "swum",
+      "Castellano": "nadar"
+     },
+     {
+      "Infinitive": "take",
+      "Simple Past": "took",
+      "Past Participle": "taken",
+      "Castellano": "tomar"
+     },
+     {
+      "Infinitive": "teach",
+      "Simple Past": "taught",
+      "Past Participle": "taught",
+      "Castellano": "enseñar"
+     },
+     {
+      "Infinitive": "tear",
+      "Simple Past": "tore",
+      "Past Participle": "torn",
+      "Castellano": "romper"
+     },
+     {
+      "Infinitive": "tell",
+      "Simple Past": "told",
+      "Past Participle": "told",
+      "Castellano": "decir"
+     },
+     {
+      "Infinitive": "think",
+      "Simple Past": "thought",
+      "Past Participle": "thought",
+      "Castellano": "pensar"
+     },
+     {
+      "Infinitive": "throw",
+      "Simple Past": "threw",
+      "Past Participle": "thrown",
+      "Castellano": "lanzar"
+     },
+     {
+      "Infinitive": "tread",
+      "Simple Past": "trode",
+      "Past Participle": "trodden\/trod",
+      "Castellano": "pisar"
+     },
+     {
+      "Infinitive": "understand",
+      "Simple Past": "understood",
+      "Past Participle": "understood",
+      "Castellano": "entender"
+     },
+     {
+      "Infinitive": "wake",
+      "Simple Past": "woke",
+      "Past Participle": "woken",
+      "Castellano": "despertarse"
+     },
+     {
+      "Infinitive": "wear",
+      "Simple Past": "wore",
+      "Past Participle": "worn",
+      "Castellano": "llevar puesto"
+     },
+     {
+      "Infinitive": "weave",
+      "Simple Past": "wove",
+      "Past Participle": "woven",
+      "Castellano": "tejer"
+     },
+     {
+      "Infinitive": "weep",
+      "Simple Past": "wept",
+      "Past Participle": "wept",
+      "Castellano": "llorar"
+     },
+     {
+      "Infinitive": "win",
+      "Simple Past": "won",
+      "Past Participle": "won",
+      "Castellano": "ganar"
+     },
+     {
+      "Infinitive": "wring",
+      "Simple Past": "wrung",
+      "Past Participle": "wrung",
+      "Castellano": "retorcer"
+     },
+     {
+      "Infinitive": "write",
+      "Simple Past": "wrote",
+      "Past Participle": "written",
+      "Castellano": "escribir"
+     }
+    ]
+    }
