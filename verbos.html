@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juego de Verbos en Inglés 2ª ESO - Salesianos</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="./script_verbos.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f2f5;
+        }
+        .container {
+            max-width: 600px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+            font-size: 24px;
+        }
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+            font-size: 20px;
+        }
+        .navbar {
+            background-color: #28a745;
+            padding: 10px;
+        }
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+        .navbar a:hover {
+            text-decoration: underline;
+        }
+        button {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #218838;
+        }
+        #game.hidden, #results.hidden {
+            display: none;
+        }
+        input[type="text"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 16px;
+        }
+        #question-counter {
+            text-align: center;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        #question {
+            text-align: center;
+            margin-bottom: 20px;
+            font-size: 18px;
+        }
+        #feedback {
+            text-align: center;
+            margin-top: 10px;
+            font-size: 16px;
+        }
+        #results {
+            text-align: center;
+        }
+        #results button {
+            background-color: #28a745;
+        }
+        #results button:hover {
+            background-color: #218838;
+        }
+        footer {
+            text-align: right;
+            margin-top: 20px;
+            font-size: 12px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Barra de navegación principal con enlaces a las diferentes secciones del sitio web -->
+    <nav class="navbar">
+        <a href="./index.html">Inicio</a>
+
+
+        <!-- <a href="./my_world.html">My World</a> -->
+        <a href="./construccion.html">My World</a>
+
+        <!-- <a href="./my_world.html">My World</a> -->
+        <a href="./construccion.html">Fit of life</a>
+
+        <!-- <a href="./entertainment.html">Entertainment & Mass Media</a> -->
+        <a href="./construccion.html">Entertainment & Mass Media</a>
+
+        <!-- <a href="./hi_tech.html">High-tech</a> -->
+        <a href="./construccion.html">High-tech</a>
+
+        <!-- <a href="./be_green.html">Be Green</a> -->
+        <a href="./construccion.html">Be Green</a>
+
+        <!-- <a href="./round_we_go.html">Round We Go</a> -->
+        <a href="./construccion.html">Round We Go</a>
+
+        <a href="./verbos.html">Verbos Irregulares</a>
+        <a href="./contacto.html">Contacto</a>  
+
+
+    </nav>
+    <div class="container">
+        <!-- Sección principal del juego de verbos -->
+        <h1>Juego de Verbos en Inglés 2ª ESO - Salesianos</h1>
+
+        <div id="start-options" style="text-align: center;">
+            <h2>Elige el conjunto de verbos:</h2>
+            <button id="first50" onclick="startGame('first50')">Primeros 50 Verbos</button>
+            <button id="last50" onclick="startGame('last50')">Últimos 50 Verbos</button>
+            <button id="all" onclick="startGame('all')">Todos los Verbos</button>
+        </div>
+
+        <div id="game" class="hidden">
+            <div id="question-counter">Pregunta 0/20</div>
+            <h2 id="question">¿Conjuga el verbo: <span style="font-size: 48px; font-weight: bold;">''</span></h2>
+
+            <input type="text" id="infinitive" placeholder="Infinitivo" aria-label="Infinitivo">
+            <input type="text" id="past" placeholder="Pasado Simple" aria-label="Pasado Simple">
+            <input type="text" id="participle" placeholder="Participio Pasado" aria-label="Participio Pasado">
+
+            <button id="submit-answer">Enviar Respuesta</button>
+            <div id="feedback" class="incorrect"></div>
+        </div>
+
+        <div id="results" class="hidden">
+            <h2>Resultados</h2>
+            <div id="incorrect-answers"></div>
+            <div id="final-score"></div>
+            <a href="./verbos.html"><button>Reiniciar Juego</button></a>
+        </div>
+
+        <footer>
+            <p>Power by: VIGMIG</p>
+        </footer>
+    </div>
+
+    <script>
+        function startGame(set) {
+            document.getElementById('start-options').style.display = 'none';
+            document.getElementById('game').classList.remove('hidden');
+            // Aquí podrías agregar la lógica para seleccionar el conjunto de verbos según 'set'
+        }
+
+        
+    </script>
+</body>
+</html>
